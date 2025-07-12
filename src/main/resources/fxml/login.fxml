@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourism.controllers.LoginController" style="-fx-background-color: linear-gradient(to bottom, #2E8B57, #228B22);">
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourism.controllers.LoginController" style="-fx-background-color: linear-gradient(to bottom, #6A5ACD, #7B68EE);">
    <children>
       <!-- Exit Button - Top Right Corner -->
       <HBox alignment="TOP_RIGHT" StackPane.alignment="TOP_RIGHT">
@@ -13,10 +13,10 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
          <children>
-            <Button fx:id="exitButton" onAction="#handleExit" style="-fx-background-color: #FF4444; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 40; -fx-pref-width: 80; -fx-font-size: 14px; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" text="Exit" />
+            <Button fx:id="exitButton" onAction="#handleExit" style="-fx-background-color: #DC143C; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 40; -fx-pref-width: 80; -fx-font-size: 14px; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" text="Exit" />
          </children>
       </HBox>
-      
+
       <!-- Main Login Form -->
       <VBox alignment="CENTER" maxWidth="450.0">
          <children>
@@ -25,7 +25,7 @@
                   <Insets bottom="40.0" left="50.0" right="50.0" top="40.0" />
                </padding>
                <children>
-                  <Label fx:id="titleLabel" text="Journey" textAlignment="CENTER" textFill="#2E8B57">
+                  <Label fx:id="titleLabel" text="Journey" textAlignment="CENTER" textFill="#6A5ACD">
                      <font>
                         <Font name="System Bold" size="36.0" />
                      </font>
@@ -33,7 +33,7 @@
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Label>
-                  
+
                   <Label text="Nepal Tourism Management System" textAlignment="CENTER" textFill="#666">
                      <font>
                         <Font name="System" size="14.0" />
@@ -42,7 +42,7 @@
                         <Insets bottom="40.0" />
                      </VBox.margin>
                   </Label>
-                  
+
                   <VBox spacing="20.0">
                      <children>
                         <VBox spacing="8.0">
@@ -51,25 +51,25 @@
                               <TextField fx:id="usernameField" promptText="Enter username" style="-fx-pref-height: 45; -fx-font-size: 14px; -fx-background-radius: 10;" />
                            </children>
                         </VBox>
-                        
+
                         <VBox spacing="8.0">
                            <children>
                               <Label fx:id="passwordLabel" text="Password:" style="-fx-font-weight: bold; -fx-font-size: 14px;" />
                               <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-pref-height: 45; -fx-font-size: 14px; -fx-background-radius: 10;" />
                            </children>
                         </VBox>
-                        
+
                         <HBox spacing="15.0" alignment="CENTER">
                            <children>
-                              <Button fx:id="loginButton" onAction="#handleLogin" prefWidth="140.0" style="-fx-background-color: #2E8B57; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 50; -fx-font-size: 16px; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" text="Login" />
-                              <Button fx:id="registerButton" onAction="#handleRegister" prefWidth="140.0" style="-fx-background-color: #FF6347; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 50; -fx-font-size: 16px; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" text="Register" />
+                              <Button fx:id="loginButton" onAction="#handleLogin" prefWidth="140.0" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 50; -fx-font-size: 16px; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" text="Login" />
+                              <Button fx:id="registerButton" onAction="#handleRegister" prefWidth="140.0" style="-fx-background-color: #9932CC; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 50; -fx-font-size: 16px; -fx-background-radius: 25; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" text="Register" />
                            </children>
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </HBox>
-                        
-                        <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: #4682B4; -fx-text-fill: white; -fx-background-radius: 15; -fx-pref-height: 35;" text="English" />
+
+                        <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: #8A2BE2; -fx-text-fill: white; -fx-background-radius: 15; -fx-pref-height: 35;" text="English" />
                      </children>
                   </VBox>
                </children>
