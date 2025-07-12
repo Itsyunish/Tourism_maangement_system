@@ -7,7 +7,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourism.controllers.TouristDashboardController">
    <top>
-      <VBox style="-fx-background-color: linear-gradient(to right, #4682B4, #87CEEB);">
+      <VBox style="-fx-background-color: linear-gradient(to right, #6A5ACD, #9370DB);">
          <children>
             <HBox alignment="CENTER_LEFT" spacing="20.0">
                <padding>
@@ -20,8 +20,8 @@
                      </font>
                   </Label>
                   <Region HBox.hgrow="ALWAYS" />
-                  <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: white; -fx-text-fill: #4682B4;" text="English" />
-                  <Button fx:id="logoutButton" onAction="#handleLogout" style="-fx-background-color: #FF6347; -fx-text-fill: white;" text="Logout" />
+                  <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: white; -fx-text-fill: #6A5ACD;" text="English" />
+                  <Button fx:id="logoutButton" onAction="#handleLogout" style="-fx-background-color: #BA55D3; -fx-text-fill: white;" text="Logout" />
                </children>
             </HBox>
             <Label fx:id="dashboardInfoLabel" text="Dashboard Info" textFill="WHITE">
@@ -32,7 +32,7 @@
          </children>
       </VBox>
    </top>
-   
+
    <center>
       <TabPane tabClosingPolicy="UNAVAILABLE">
          <tabs>
@@ -48,7 +48,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
+
                         <GridPane hgap="15.0" vgap="15.0">
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
@@ -63,25 +63,25 @@
                            <children>
                               <Label text="Select Attraction:" />
                               <ComboBox fx:id="attractionComboBox" prefWidth="300.0" promptText="Choose an attraction" GridPane.columnIndex="1" />
-                              
+
                               <Label text="Trek Date:" GridPane.rowIndex="1" />
                               <DatePicker fx:id="trekDatePicker" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              
+
                               <Label text="Total Price:" GridPane.rowIndex="2" />
                               <Label fx:id="priceLabel" text="Select attraction and date" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              
-                              <Button fx:id="bookButton" onAction="#handleBooking" prefWidth="150.0" style="-fx-background-color: #32CD32; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 40;" text="Book Now" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                              <Button fx:id="bookButton" onAction="#handleBooking" prefWidth="150.0" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 40;" text="Book Now" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                            </children>
                         </GridPane>
                      </children>
                   </VBox>
                </content>
             </Tab>
-            
+
             <Tab text="My Bookings">
                <content>
                   <VBox spacing="15.0">
@@ -94,7 +94,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
+
                         <TableView fx:id="bookingsTable" prefHeight="400.0">
                            <columns>
                               <TableColumn fx:id="bookingIdColumn" prefWidth="80.0" text="ID" />
@@ -104,11 +104,11 @@
                               <TableColumn fx:id="priceColumn" prefWidth="100.0" text="Price" />
                            </columns>
                         </TableView>
-                        
+
                         <HBox spacing="15.0">
                            <children>
-                              <Button fx:id="updateBookingButton" onAction="#handleUpdateBooking" style="-fx-background-color: #4682B4; -fx-text-fill: white;" text="Update" />
-                              <Button fx:id="cancelBookingButton" onAction="#handleCancelBooking" style="-fx-background-color: #FF6347; -fx-text-fill: white;" text="Cancel" />
+                              <Button fx:id="updateBookingButton" onAction="#handleUpdateBooking" style="-fx-background-color: #9370DB; -fx-text-fill: white;" text="Update" />
+                              <Button fx:id="cancelBookingButton" onAction="#handleCancelBooking" style="-fx-background-color: #BA55D3; -fx-text-fill: white;" text="Cancel" />
                            </children>
                         </HBox>
                      </children>
