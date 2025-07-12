@@ -8,7 +8,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourism.controllers.AdminDashboardController">
    <top>
-      <VBox style="-fx-background-color: linear-gradient(to right, #2F4F4F, #708090);">
+      <VBox style="-fx-background-color: linear-gradient(to right, #4B0082, #8A2BE2);">
          <children>
             <HBox alignment="CENTER_LEFT" spacing="20.0">
                <padding>
@@ -21,9 +21,9 @@
                      </font>
                   </Label>
                   <Region HBox.hgrow="ALWAYS" />
-                  <Button fx:id="refreshDataButton" onAction="#handleRefreshData" style="-fx-background-color: white; -fx-text-fill: #2F4F4F;" text="Refresh Data" />
-                  <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: white; -fx-text-fill: #2F4F4F;" text="English" />
-                  <Button fx:id="logoutButton" onAction="#handleLogout" style="-fx-background-color: #FF6347; -fx-text-fill: white;" text="Logout" />
+                  <Button fx:id="refreshDataButton" onAction="#handleRefreshData" style="-fx-background-color: #9370DB; -fx-text-fill: white;" text="Refresh Data" />
+                  <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: #9370DB; -fx-text-fill: white;" text="English" />
+                  <Button fx:id="logoutButton" onAction="#handleLogout" style="-fx-background-color: #9932CC; -fx-text-fill: white;" text="Logout" />
                </children>
             </HBox>
             <Label fx:id="dashboardInfoLabel" text="Dashboard Info" textFill="WHITE">
@@ -34,7 +34,7 @@
          </children>
       </VBox>
    </top>
-   
+
    <center>
       <TabPane fx:id="mainTabPane" tabClosingPolicy="UNAVAILABLE">
          <tabs>
@@ -50,7 +50,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
+
                         <TableView fx:id="guidesTable" prefHeight="250.0">
                            <columns>
                               <TableColumn fx:id="guideUsernameColumn" prefWidth="120.0" text="Username" />
@@ -59,7 +59,7 @@
                               <TableColumn fx:id="guideExperienceColumn" prefWidth="100.0" text="Experience" />
                            </columns>
                         </TableView>
-                        
+
                         <GridPane hgap="10.0" vgap="10.0">
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -76,25 +76,25 @@
                               <TextField fx:id="guidePasswordField" promptText="Password" GridPane.columnIndex="1" />
                               <TextField fx:id="guideNameField" promptText="Full Name" GridPane.columnIndex="2" />
                               <TextField fx:id="guideEmailField" promptText="Email" GridPane.columnIndex="3" />
-                              
+
                               <TextField fx:id="guidePhoneField" promptText="Phone" GridPane.rowIndex="1" />
                               <TextField fx:id="guideLanguagesField" promptText="Languages (comma separated)" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <TextField fx:id="guideExperienceField" promptText="Experience (years)" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
-                        
+
                         <HBox spacing="10.0">
                            <children>
-                              <Button fx:id="addGuideButton" onAction="#handleAddGuide" style="-fx-background-color: #32CD32; -fx-text-fill: white;" text="Add Guide" />
-                              <Button fx:id="updateGuideButton" onAction="#handleUpdateGuide" style="-fx-background-color: #4682B4; -fx-text-fill: white;" text="Update Guide" />
-                              <Button fx:id="deleteGuideButton" onAction="#handleDeleteGuide" style="-fx-background-color: #FF6347; -fx-text-fill: white;" text="Delete Guide" />
+                              <Button fx:id="addGuideButton" onAction="#handleAddGuide" style="-fx-background-color: #6A5ACD; -fx-text-fill: white;" text="Add Guide" />
+                              <Button fx:id="updateGuideButton" onAction="#handleUpdateGuide" style="-fx-background-color: #7B68EE; -fx-text-fill: white;" text="Update Guide" />
+                              <Button fx:id="deleteGuideButton" onAction="#handleDeleteGuide" style="-fx-background-color: #8B0000; -fx-text-fill: white;" text="Delete Guide" />
                            </children>
                         </HBox>
                      </children>
                   </VBox>
                </content>
             </Tab>
-            
+
             <Tab text="Attraction Management">
                <content>
                   <VBox spacing="15.0">
@@ -107,7 +107,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
+
                         <TableView fx:id="attractionsTable" prefHeight="250.0">
                            <columns>
                               <TableColumn fx:id="attractionNameColumn" prefWidth="150.0" text="Name" />
@@ -117,7 +117,7 @@
                               <TableColumn fx:id="attractionPriceColumn" prefWidth="100.0" text="Base Price" />
                            </columns>
                         </TableView>
-                        
+
                         <HBox spacing="15.0">
                            <children>
                               <TextField fx:id="attractionNameField" promptText="Attraction Name" />
@@ -127,19 +127,19 @@
                               <TextField fx:id="attractionPriceField" promptText="Base Price" />
                            </children>
                         </HBox>
-                        
+
                         <HBox spacing="10.0">
                            <children>
-                              <Button fx:id="addAttractionButton" onAction="#handleAddAttraction" style="-fx-background-color: #32CD32; -fx-text-fill: white;" text="Add Attraction" />
-                              <Button fx:id="updateAttractionButton" onAction="#handleUpdateAttraction" style="-fx-background-color: #4682B4; -fx-text-fill: white;" text="Update Attraction" />
-                              <Button fx:id="deleteAttractionButton" onAction="#handleDeleteAttraction" style="-fx-background-color: #FF6347; -fx-text-fill: white;" text="Delete Attraction" />
+                              <Button fx:id="addAttractionButton" onAction="#handleAddAttraction" style="-fx-background-color: #6A5ACD; -fx-text-fill: white;" text="Add Attraction" />
+                              <Button fx:id="updateAttractionButton" onAction="#handleUpdateAttraction" style="-fx-background-color: #7B68EE; -fx-text-fill: white;" text="Update Attraction" />
+                              <Button fx:id="deleteAttractionButton" onAction="#handleDeleteAttraction" style="-fx-background-color: #8B0000; -fx-text-fill: white;" text="Delete Attraction" />
                            </children>
                         </HBox>
                      </children>
                   </VBox>
                </content>
             </Tab>
-            
+
             <Tab text="Booking Management">
                <content>
                   <VBox spacing="15.0">
@@ -152,7 +152,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
+
                         <TableView fx:id="bookingsTable" prefHeight="300.0">
                            <columns>
                               <TableColumn fx:id="bookingIdColumn" prefWidth="80.0" text="ID" />
@@ -164,21 +164,21 @@
                               <TableColumn fx:id="bookingPriceColumn" prefWidth="100.0" text="Price" />
                            </columns>
                         </TableView>
-                        
+
                         <HBox spacing="15.0">
                            <children>
                               <ComboBox fx:id="assignGuideCombo" promptText="Select Guide" />
-                              <Button fx:id="assignGuideButton" onAction="#handleAssignGuide" style="-fx-background-color: #32CD32; -fx-text-fill: white;" text="Assign Guide" />
+                              <Button fx:id="assignGuideButton" onAction="#handleAssignGuide" style="-fx-background-color: #6A5ACD; -fx-text-fill: white;" text="Assign Guide" />
                               <ComboBox fx:id="bookingStatusCombo" promptText="Select Status" />
-                              <Button fx:id="updateBookingStatusButton" onAction="#handleUpdateBookingStatus" style="-fx-background-color: #4682B4; -fx-text-fill: white;" text="Update Status" />
-                              <Button fx:id="deleteBookingButton" onAction="#handleDeleteBooking" style="-fx-background-color: #FF6347; -fx-text-fill: white;" text="Delete Booking" />
+                              <Button fx:id="updateBookingStatusButton" onAction="#handleUpdateBookingStatus" style="-fx-background-color: #7B68EE; -fx-text-fill: white;" text="Update Status" />
+                              <Button fx:id="deleteBookingButton" onAction="#handleDeleteBooking" style="-fx-background-color: #8B0000; -fx-text-fill: white;" text="Delete Booking" />
                            </children>
                         </HBox>
                      </children>
                   </VBox>
                </content>
             </Tab>
-            
+
             <Tab text="Analytics">
                <content>
                   <VBox spacing="20.0">
@@ -191,10 +191,10 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
+
                         <HBox spacing="20.0">
                            <children>
-                              <VBox spacing="10.0" style="-fx-background-color: #F0F8FF; -fx-padding: 15; -fx-background-radius: 10;">
+                              <VBox spacing="10.0" style="-fx-background-color: #E6E6FA; -fx-padding: 15; -fx-background-radius: 10;">
                                  <children>
                                     <Label fx:id="totalRevenueLabel" text="Total Revenue: $0.00">
                                        <font>
@@ -208,7 +208,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        
+
                         <HBox spacing="20.0">
                            <children>
                               <PieChart fx:id="nationalityChart" prefHeight="300.0" prefWidth="400.0" title="Tourist Nationality Distribution" />
