@@ -7,7 +7,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourism.controllers.GuideDashboardController">
    <top>
-      <VBox style="-fx-background-color: linear-gradient(to right, #FF8C00, #FFD700);">
+      <VBox style="-fx-background-color: linear-gradient(to right, #1E90FF, #00CED1);">
          <children>
             <HBox alignment="CENTER_LEFT" spacing="20.0">
                <padding>
@@ -20,9 +20,9 @@
                      </font>
                   </Label>
                   <Region HBox.hgrow="ALWAYS" />
-                  <Button fx:id="refreshButton" onAction="#handleRefresh" style="-fx-background-color: white; -fx-text-fill: #FF8C00;" text="Refresh" />
-                  <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: white; -fx-text-fill: #FF8C00;" text="English" />
-                  <Button fx:id="logoutButton" onAction="#handleLogout" style="-fx-background-color: #FF6347; -fx-text-fill: white;" text="Logout" />
+                  <Button fx:id="refreshButton" onAction="#handleRefresh" style="-fx-background-color: white; -fx-text-fill: #1E90FF;" text="Refresh" />
+                  <Button fx:id="languageToggleButton" onAction="#toggleLanguage" style="-fx-background-color: white; -fx-text-fill: #1E90FF;" text="English" />
+                  <Button fx:id="logoutButton" onAction="#handleLogout" style="-fx-background-color: #DC143C; -fx-text-fill: white;" text="Logout" />
                </children>
             </HBox>
             <Label fx:id="dashboardInfoLabel" text="Dashboard Info" textFill="WHITE">
@@ -33,7 +33,7 @@
          </children>
       </VBox>
    </top>
-   
+
    <center>
       <TabPane tabClosingPolicy="UNAVAILABLE">
          <tabs>
@@ -49,8 +49,8 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
-                        <VBox spacing="10.0" style="-fx-background-color: #FFF8DC; -fx-padding: 15; -fx-background-radius: 10;">
+
+                        <VBox spacing="10.0" style="-fx-background-color: #E0FFFF; -fx-padding: 15; -fx-background-radius: 10;">
                            <children>
                               <Label fx:id="earningsLabel" text="Total Earnings: $0.00">
                                  <font>
@@ -65,7 +65,7 @@
                   </VBox>
                </content>
             </Tab>
-            
+
             <Tab text="Upcoming Treks">
                <content>
                   <VBox spacing="15.0">
@@ -78,7 +78,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
+
                         <TableView fx:id="upcomingTreksTable" prefHeight="300.0">
                            <columns>
                               <TableColumn fx:id="bookingIdColumn" prefWidth="80.0" text="Booking ID" />
@@ -92,7 +92,7 @@
                   </VBox>
                </content>
             </Tab>
-            
+
             <Tab text="Important Updates">
                <content>
                   <VBox spacing="15.0">
@@ -105,8 +105,8 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        
-                        <TextArea fx:id="updatesTextArea" prefHeight="400.0" style="-fx-background-color: #FFFACD;" wrapText="true" />
+
+                        <TextArea fx:id="updatesTextArea" prefHeight="400.0" style="-fx-background-color: #F0F8FF;" wrapText="true" />
                      </children>
                   </VBox>
                </content>
